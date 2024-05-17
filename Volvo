@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Umfrage Weiterleitung</title>
+  <script>
+    function redirect() {
+      var urls = [
+        'https://docs.google.com/forms/d/e/1FAIpQLSdu7EMlmU9qLe6PWJMyitEzPUKxs39AOUuy_ObXCIihCJ7KkQ/viewform?vc=0&c=0&w=1&flr=0', // Ersetzen Sie dies mit dem Link zu Ihrer Umfrage A
+        'https://docs.google.com/forms/d/e/1FAIpQLSdUlPAO3ji9QTS2SWJEEnWY55toQCTqrE9eYe3fRG8KZqMm4Q/viewform?vc=0&c=0&w=1&flr=0'  // Ersetzen Sie dies mit dem Link zu Ihrer Umfrage B
+      ];
+      var randomIndex = Math.floor(Math.random() * urls.length);
+      window.location.href = urls[randomIndex];
+    }
+  </script>
+</head>
+<body onload="redirect()">
+  <p>Sie werden zu einer Umfrage weitergeleitet...</p>
+</body>
+</html>
